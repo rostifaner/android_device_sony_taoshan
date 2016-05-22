@@ -254,6 +254,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/sap.conf:system/etc/sap.conf \
     $(LOCAL_PATH)/gps/sec_config:system/etc/sec_config
 
+# ART
+PRODUCT_PROPERTY_OVERRIDES += \
+    dalvik.vm.dex2oat-swap=false
+
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.ril.transmitpower=true \
     persist.radio.apm_sim_not_pwdn=1 \
