@@ -112,10 +112,14 @@ PRODUCT_PACKAGES += \
     libnl_2 \
     libtinyxml
 
- # Camera
+# Camera
 PRODUCT_PACKAGES += \
     camera.qcom \
     Camera2
+
+# Gello
+PRODUCT_PACKAGES += \
+    Gello
 
 PRODUCT_PACKAGES += libshim_qcopt
 
