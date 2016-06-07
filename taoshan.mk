@@ -114,8 +114,7 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    camera.qcom \
-    Camera2
+    camera.qcom
 
 # Gello
 PRODUCT_PACKAGES += \
