@@ -199,13 +199,13 @@
 
          Must be overridden in platform specific overlays -->
     <integer-array name="config_autoBrightnessLevels">
-        <item>1</item>
-        <item>2</item>
-        <item>5</item>
         <item>10</item>
-        <item>260</item>
-        <item>350</item>
-        <item>355</item>
+        <item>30</item>
+        <item>60</item>
+        <item>100</item>
+        <item>150</item>
+        <item>210</item>
+        <item>255</item>
     </integer-array>
 
     <!-- Array of output values for LCD backlight corresponding to the LUX values
@@ -214,13 +214,13 @@
          The brightness values must be between 0 and 255 and be non-decreasing.
          This must be overridden in platform specific overlays -->
     <integer-array name="config_autoBrightnessLcdBacklightValues">
-        <item>34</item>
-        <item>35</item>
+        <item>10</item>
+        <item>20</item>
         <item>40</item>
-        <item>45</item>
         <item>70</item>
-        <item>143</item>
-        <item>191</item>
+        <item>110</item>
+        <item>160</item>
+        <item>200</item>
         <item>255</item>
     </integer-array>
 
@@ -287,7 +287,4 @@
          based on screen size and total memory for the largest lowmemorykiller bucket, and
          scaled proportionally to the smaller buckets.  -1 keeps the default. -->
     <integer name="config_lowMemoryKillerMinFreeKbytesAbsolute">122880</integer>
-
-    <!-- Show battery fully charged notification -->
-    <bool name="config_showBatteryFullyChargedNotification">true</bool>
 </resources>
