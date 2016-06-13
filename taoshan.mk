@@ -272,7 +272,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.debug.wfd.enable=1 \
     persist.sys.wfd.virtual=0 \
     ro.qualcomm.bt.hci_transport=smd \
-    persist.timed.enable=true
+    persist.timed.enable=true \
+    debug.composition.type=dyn
 
 PRODUCT_PROPERTY_OVERRIDES += \
     qcom.audio.init=complete \
