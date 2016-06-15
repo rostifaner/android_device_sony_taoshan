@@ -19,8 +19,8 @@ on init
     write /sys/class/android_usb/android0/f_rndis/vendorID 0FCE
     write /sys/class/android_usb/android0/f_rndis/wceis 1
 
-
-
+on charger
+    setprop sys.usb.config mass_storage
 
 on boot
     write /sys/class/android_usb/android0/iSerial ${ro.serialno}
@@ -32,9 +32,6 @@ on boot
 
     write /sys/class/android_usb/f_mass_storage/lun/nofua 1
 
-
-
-
 on post-fs
     chown system system /sys/devices/platform/msm_hsusb/gadget/lun1/file
     chmod 0660 /sys/devices/platform/msm_hsusb/gadget/lun1/file
@@ -42,9 +39,6 @@ on post-fs
     write /sys/class/android_usb/android0/f_mass_storage/serial_number $(ro.serialno)
     write /sys/class/android_usb/android0/f_mass_storage/eui64_id 000AD90000000000
     write /sys/devices/platform/msm_hsusb/gadget/lun1/nofua 1
-
-
-
 
 on property:sys.usb.config=mass_storage
     write /sys/class/android_usb/android0/enable 0
