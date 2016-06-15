@@ -3083,7 +3083,7 @@ SectionDevice
 		'SLIM_0_RX Channels':0:One
 		'RX1 MIX1 INP1':0:RX1
 		'RX1 Digital Volume':1:76
-		'PMIC SPK Gain':0:POS_10_DB
+		'PMIC SPK Gain':0:POS_20_DB
 	EndSequence
 
 	DisableSequence
@@ -3173,8 +3173,8 @@ SectionDevice
 		'DAC4 MUX':0:ON
 		'HPHL Volume':1:80
 		'HPHR Volume':1:80
-		'RX2 Digital Volume':1:67
-		'RX3 Digital Volume':1:67
+		'RX2 Digital Volume':1:68
+		'RX3 Digital Volume':1:68
 	EndSequence
 
 	DisableSequence
@@ -3534,9 +3534,9 @@ SectionDevice
 		        'DEC1 MUX':0:ADC1
 		        'SLIM TX2 MUX':0:DEC2
 		        'DEC2 MUX':0:ADC3
-		        'DEC1 Volume':1:60
+		        'DEC1 Volume':1:72
 		        'ADC1 Volume':1:100
-		        'DEC2 Volume':1:60
+		        'DEC2 Volume':1:72
 		        'ADC3 Volume':1:100
 		        'SLIM_0_TX Channels':0:Two
 	    EndSequence
