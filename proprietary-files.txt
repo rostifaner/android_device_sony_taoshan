@@ -147,11 +147,11 @@ vendor/lib/libCB.so
 vendor/lib/libdiag.so
 vendor/lib/libgsl.so
 vendor/lib/libllvm-qcom.so
-vendor/lib/libqc-opt.so
 vendor/lib/librs_adreno_sha1.so
 vendor/lib/librs_adreno.so
 vendor/lib/libRSDriver_adreno.so
 vendor/lib/libsc-a3xx.so
+vendor/lib/libqti-perfd-client.so
 vendor/lib/libtime_genoff.so
 vendor/lib/libulp2.so
 vendor/lib/libwvdrm_L1.so
