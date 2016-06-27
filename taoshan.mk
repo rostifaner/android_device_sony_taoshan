@@ -16,7 +16,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.extension_library=libqti-perfd-client.so
 
 $(call inherit-product, vendor/sony/taoshan/taoshan-vendor.mk)
-$(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
 
 # OpenGL ES 3.0
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -254,6 +253,12 @@ PRODUCT_COPY_FILES += \
 
 # ART
 PRODUCT_PROPERTY_OVERRIDES += \
+    dalvik.vm.heapstartsize=8m \
+    dalvik.vm.heapgrowthlimit=100m \
+    dalvik.vm.heapsize=174m \
+    dalvik.vm.heaptargetutilization=0.75 \
+    dalvik.vm.heapminfree=512k \
+    dalvik.vm.heapmaxfree=8m \
     dalvik.vm.dex2oat-swap=false
 
 PRODUCT_PROPERTY_OVERRIDES += \
