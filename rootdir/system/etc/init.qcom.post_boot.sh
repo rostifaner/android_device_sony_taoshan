@@ -250,11 +250,3 @@ esac
 #fastrpc permission setting
 chown system.system /dev/adsprpc-smd
 chmod 666 /dev/adsprpc-smd
-
-# disableiostats
-echo 0 > /sys/block/mmcblk0/queue/iostats
-echo 0 > /sys/block/mmcblk1/queue/iostats
-
-# disable_entropy_cont
-echo 0 > /sys/block/mmcblk0/queue/add_random
-echo 0 > /sys/block/mmcblk1/queue/add_random
